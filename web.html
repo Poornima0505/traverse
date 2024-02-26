@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           width:100vw;
+           height:100vh;
+           display: grid; 
+           grid-template-areas: 
+           'Navigation Navigation Navigation'           
+           'head head head'
+           'sidebar maincontent maincontent'
+           'aside1 aside2 aside3'
+           'copy copy copy'
+           ;
+           grid-template-columns: 1fr 1fr 1fr;
+           grid-template-rows: 50px 100px 2fr 2fr 50px;
+        
+           
+           
+        }
+
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        header,main,nav,aside,footer{
+            background-color: aqua;
+            color:red;
+            border:1px solid white;
+            padding: 20px;
+        }
+        #van{
+             grid-area: Navigation;
+        }
+        
+        header{
+            grid-area: head;
+        }
+        main{
+            grid-area: sidebar;
+        }
+        nav{
+            grid-area: maincontent;
+        }
+        aside{
+            grid-area: aside1 aside2 aside3;
+        }
+        footer{
+            grid-area: copy;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav id="van">Navigation</nav>
+    <header>Head</header>
+    <main>sidebar</main>
+    <nav>main content</nav>
+    <aside>aside1</aside>
+    <aside>aside2</aside> 
+    <aside>aside3</aside>
+    <footer>Copy</footer>
+</body>
+</html>

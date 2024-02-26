@@ -1,0 +1,13 @@
+
+div{
+    background-image: linear-gradient(red,yellow),url(nature.jpg) ;
+    width:500px;
+    height:500px;
+    border:5px solid black;
+    /* background-blend-mode:hard-light ; */
+    /* background-blend-mode: color-dodge; */
+    /* background-blend-mode: darken; */
+    /* background-blend-mode: exclusion; */
+    /* background-blend-mode: lighten; */
+   
+}
